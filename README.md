@@ -1,0 +1,1 @@
+# Genshin-Type-Web
