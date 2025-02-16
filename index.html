@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Web Event</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🌟 Genshin Impact Web Event 🌟</h1>
+        <p>Click "Start Event" to reveal your character!</p>
+        <button class="start-btn" onclick="startEvent()">Start Event</button>
+
+        <div class="game-area">
+            <div class="card" id="hiddenCard" onclick="revealCharacter()">
+                <img id="characterImg" src="" alt="Genshin Character">
+                <p class="card-text">Click to reveal!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Congratulations, Traveler! 🎉</h2>
+            <p>You have revealed <strong id="charName"></strong>!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
